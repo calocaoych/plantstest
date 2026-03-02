@@ -11,13 +11,14 @@ function App() {
     <BrowserRouter basename="/plantstest">
       <div className="app-shell">
         <Header />
+        
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/plants" element={<PlantManagerPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Footer />
+         
         </Routes>
-       
+        <Footer />
       </div>
     </BrowserRouter>
     

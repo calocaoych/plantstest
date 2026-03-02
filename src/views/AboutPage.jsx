@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <main className="page">
       <div className="container narrow">
-        <h1>About</h1>
+        <h1>"Planting a sustainable habit"</h1>
         <h1 className="home-description">
           FlowerPlant
         </h1>
@@ -27,7 +27,7 @@ const AboutPage = () => {
           <h2>Why plant care?</h2>
           <p>
             It takes empathy, time and discipline to maintain these quiet beings. 
-            Plants bring special company to our homes, let&apos;t take care of them.
+            Plants bring special company to our homes, let&apos;s take care of them.
           </p>
         </section>
 

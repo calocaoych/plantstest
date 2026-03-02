@@ -4,7 +4,9 @@ const Footer = () => {
       <div className="container footer-inner">
         <p>© {new Date().getFullYear()} FlowerPlant</p>
         <p className="footer-sub">
-         "Pursuing a sustainable  mindset"
+         Address: 123 Botanical Lane, Green City, 2345 Copenhagen, Denmark <br />
+         Email: flowplant123@flowerplant2026.dk <br />
+         Mobile: +452076765
         </p>
       </div>
     </footer>
