@@ -8,7 +8,7 @@ import AboutPage from "./views/AboutPage.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/plantstest">
       <div className="app-shell">
         <Header />
         <Routes>
@@ -20,7 +20,8 @@ function App() {
        
       </div>
     </BrowserRouter>
+    
   );
 }
-
+    
 export default App;
