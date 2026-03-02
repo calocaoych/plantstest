@@ -265,7 +265,7 @@ const Searchfield = () => {
               <div className="filters">
                 <input
                   type="text"
-                  placeholder="Search by name, species, water, light, soil, or level"
+                  placeholder="Search by name, species, water, light, soil, or level" 
                   value={filterText}
                   onChange={(event) => setFilterText(event.target.value)}
                 />
