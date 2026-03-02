@@ -15,9 +15,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/plants" element={<PlantManagerPage />} />
           <Route path="/about" element={<AboutPage />} />
-          
+          <Footer />
         </Routes>
-        <Footer />
+       
       </div>
     </BrowserRouter>
   );
