@@ -1,28 +1,34 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import HomePage from "./views/HomePage.jsx";
-import PlantManagerPage from "./views/PlantManagerPage.jsx";
-import AboutPage from "./views/AboutPage.jsx";
 
+import HomePage from "./views/HomePage.jsx";
+import AboutPage from "./views/AboutPage.jsx";
+import "./app.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./Layout";
+import "./app.css";
+import  PlantManagerPage from "./views/PlantManagerPage.jsx";
+
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "plants", element: <PlantManagerPage /> },
+        { path: "about", element: <AboutPage /> },
+        
+      ],
+    },
+  ],
+  {
+    basename: "/plantstest", // ✅ IMPORTANT: must match repo name
+  }
+);
 
 function App() {
-  return (
-    <BrowserRouter basename="/plantstest">
-      <div className="app-shell">
-        <Header />
-        
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/plants" element={<PlantManagerPage />} />
-          <Route path="/about" element={<AboutPage />} />
-         
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
-    
-  );
+  return <RouterProvider router={router} />;
 }
-    
+
+
 export default App;

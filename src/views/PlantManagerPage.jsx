@@ -3,6 +3,7 @@ import Create from "./Create.jsx";
 import Update from "./Update.jsx";
 import Delete from "./Delete.jsx";
 
+
 const STORAGE_KEY = "plant-care-plants";
 
 // Example plants always visible at the top of the page.
@@ -96,7 +97,7 @@ const normalizePlant = (plant) => {
   };
 };
 
-const Searchfield = () => {
+const PlantManagerPage = () => {
   const [plants, setPlants] = useState([]);
   const [filterText, setFilterText] = useState("");
   const [selectedPlantId, setSelectedPlantId] = useState(null);
@@ -344,4 +345,4 @@ const Searchfield = () => {
   );
 };
 
-export default Searchfield;
+export default PlantManagerPage;
